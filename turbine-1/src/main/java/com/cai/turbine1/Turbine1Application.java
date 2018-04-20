@@ -1,14 +1,16 @@
-package com.cai.configclient1;
+package com.cai.turbine1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
+@EnableTurbine
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ConfigClient1Application {
+public class Turbine1Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConfigClient1Application.class, args);
+		SpringApplication.run(Turbine1Application.class, args);
 	}
 }
