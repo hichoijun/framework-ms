@@ -15,8 +15,13 @@ public class TestController {
 
   @GetMapping("/hi")
   public String hi() {
-
     return "hello, I am " + env + ", name " + name;
+  }
+
+
+  @GetMapping("/config/client/hi2")
+  public String chi() {
+    return "hello, I am config client";
   }
 
 }

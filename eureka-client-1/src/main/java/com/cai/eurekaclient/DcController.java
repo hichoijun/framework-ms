@@ -11,6 +11,12 @@ public class DcController {
     @Autowired
     DiscoveryClient discoveryClient;
 
+    @GetMapping("/hi")
+    public String hi() {
+        return "hi";
+    }
+
+
     @GetMapping("/dc")
     public String dc() {
         String services = "Services: " + discoveryClient.getServices();
